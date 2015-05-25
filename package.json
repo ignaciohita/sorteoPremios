@@ -1,38 +1,40 @@
 {
-  "name": "sorteoPremios",
-  "version": "1.0.0",
-  "description": "Primer ejemplo del libro",
-  "author": "Jose Ignacio Hita Barraza <ignaciohita@gmail.com>",
-  "contributors": [
-    {
-      "name": "Jose Ignacio Hita Barraza",
-      "email": "ignaciohita@gmail.com"
+    "name": "sorteoPremios",
+    "version": "1.0.0",
+    "description": "Primer ejemplo del libro",
+    "author": "Jose Ignacio Hita Barraza <ignaciohita@gmail.com>",
+    "contributors": [
+        {
+            "name": "Jose Ignacio Hita Barraza",
+            "email": "ignaciohita@gmail.com"
     }
   ],
-  "scripts": {
-    "test": "gulp",
-    "predeploy": "gulp deploy"
-  },
-  "main": "index.html",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/ignaciohita/sorteoPremios.git"
-  },
-  "bugs": {
-    "url": "https://github.com/ignaciohita/sorteoPremios/issues"
-  },
-  "keywords": [
+    "scripts": {
+        "test": "gulp",
+        "predeploy": "gulp deploy"
+    },
+    "main": "index.html",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ignaciohita/sorteoPremios.git"
+    },
+    "bugs": {
+        "url": "https://github.com/ignaciohita/sorteoPremios/issues"
+    },
+    "keywords": [
     "angularJS",
     "example",
     "teaching"
   ],
-  "dependencies": {
-    "bower": "^1.4.1",
-    "gulp": "^3.8.11",
-    "gulp-jshint": "^1.11.0",
-    "gulp-webserver": "^0.9.1"
-  },
-  "preferGlobal": true,
-  "private": false,
-  "license": "MIT"
+    "dependencies": {
+        "bower": "^1.4.1",
+        "gulp": "^3.8.11",
+        "gulp-gjslint": "^0.1.4",
+        "gulp-jshint": "^1.11.0",
+        "gulp-jslint": "^0.2.2",
+        "gulp-webserver": "^0.9.1"
+    },
+    "preferGlobal": true,
+    "private": false,
+    "license": "MIT"
 }
