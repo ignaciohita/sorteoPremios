@@ -16,6 +16,7 @@ gulp.task("dev-server", function () {
         }));
 });
 
+<<<<<<< Updated upstream
 // Busca errores de JavaScript de acuerdo con JsHint
 gulp.task("jsHint", function () {
     "use strict";
@@ -45,6 +46,15 @@ gulp.task("jsGoogleLint", function () {
         .pipe(gjsLint.reporter("console"), {
             fail: true
         });
+=======
+// JsHint
+gulp.task("jshint", function () {
+    "use strict";
+
+    return gulp.src("./app/js/**/*.js")
+        .pipe(jshint(".jshintrc"))
+        .pipe(jshint.reporter("default"));
+>>>>>>> Stashed changes
 });
 
 gulp.task("default", ["dev-server"]);
