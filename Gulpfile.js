@@ -16,15 +16,6 @@ gulp.task("dev-server", function () {
         }));
 });
 
-// Busca errores de JavaScript de acuerdo con JsHint
-gulp.task("jsHint", function () {
-    "use strict";
-
-    return gulp.src(["./app/js/**/*.js"])
-        .pipe(jsHint(".jshintrc"))
-        .pipe(jsHint.reporter("default"));
-});
-
 // Busca errores de JavaScript de acuerdo con JsLint
 gulp.task("jsLint", function () {
     "use strict";
@@ -34,6 +25,15 @@ gulp.task("jsLint", function () {
         .on("error", function (error) {
             console.error(String(error));
         });
+});
+
+// Busca errores de JavaScript de acuerdo con JsHint
+gulp.task("jsHint", function () {
+    "use strict";
+
+    return gulp.src(["./app/js/**/*.js"])
+        .pipe(jsHint(".jshintrc"))
+        .pipe(jsHint.reporter("default"));
 });
 
 // Busca errores de JavaScript de acuerdo con Google JsLinter

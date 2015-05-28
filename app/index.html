@@ -3,11 +3,16 @@
 <head>
     <title>Sorteo de Premios</title>
 
+    <script src="lib/angular/angular.js"></script>
     <script src="js/main.js"></script>
 </head>
 
-<body>
+<body ng-app="SorteoPremios" ng-controller="PremioController" data-ng-init="elegirPremios()">
     <h1>Bienvenido al sorteo de premios</h1>
+    <h3>¡Enhorabuena! ¡Aquí tienes tu lista de premios!</h3>
+    <li ng-repeat="premio in premios">
+        <h3>{{premio}}</h3>
+    </li>
 </body>
 
 </html>
