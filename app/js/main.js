@@ -14,5 +14,13 @@ angularApp.controller('PremioController', function ($scope) {
             ultimoPremio = Math.floor(Math.random() * $scope.listaPremios.length);
 
         $scope.premios = $scope.listaPremios.slice(Math.min(primerPremio, ultimoPremio), Math.max(primerPremio, ultimoPremio));
+
+        $scope.fechaSorteo = new Date();
+    };
+}).filter('filtroFechaSorteo', function () {
+    'use strict';
+
+    return function (fechaSorteo) {
+        return fechaSorteo.getDay() + ' del ' + fechaSorteo.getUTCMonth() + ' de ' + fechaSorteo.getFullYear();
     };
 });
