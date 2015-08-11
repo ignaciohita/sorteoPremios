@@ -1,40 +1,49 @@
 {
-    "name": "sorteoPremios",
-    "version": "1.0.0",
-    "description": "Ejemplo del libro: un sistema sencillo que devuelve una lista de premios",
-    "author": "Jose Ignacio Hita Barraza <ignaciohita@gmail.com>",
-    "contributors": [
-        {
-            "name": "Jose Ignacio Hita Barraza",
-            "email": "ignaciohita@gmail.com"
+  "name": "sorteoPremios",
+  "version": "1.0.0",
+  "description": "Ejemplo del libro: un sistema sencillo que devuelve una lista de premios",
+  "author": "Jose Ignacio Hita Barraza <ignaciohita@gmail.com>",
+  "contributors": [
+    {
+      "name": "Jose Ignacio Hita Barraza",
+      "email": "ignaciohita@gmail.com"
     }
   ],
-    "scripts": {
-        "test": "gulp",
-        "predeploy": "gulp deploy"
-    },
-    "main": "index.html",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/ignaciohita/sorteoPremios.git"
-    },
-    "bugs": {
-        "url": "https://github.com/ignaciohita/sorteoPremios/issues"
-    },
-    "keywords": [
+  "scripts": {
+    "test": "gulp",
+    "predeploy": "gulp deploy"
+  },
+  "main": "index.html",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ignaciohita/sorteoPremios.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ignaciohita/sorteoPremios/issues"
+  },
+  "keywords": [
     "angularJS",
     "example",
     "teaching"
   ],
-    "dependencies": {
-        "bower": "^1.4.1",
-        "gulp": "^3.8.11",
-        "gulp-gjslint": "^0.1.4",
-        "gulp-jshint": "^1.11.0",
-        "gulp-jslint": "^0.2.2",
-        "gulp-webserver": "^0.9.1"
-    },
-    "preferGlobal": true,
-    "private": false,
-    "license": "MIT"
+  "dependencies": {
+    "bower": "^1.4.1",
+    "grunt": "^0.4.5",
+    "grunt-karma": "^0.12.0",
+    "gulp": "^3.9.0",
+    "gulp-gjslint": "^0.1.4",
+    "gulp-jshint": "^1.11.0",
+    "gulp-jslint": "^0.2.2",
+    "gulp-webserver": "^0.9.1",
+    "jasmine": "^2.3.2",
+    "jasmine-core": "^2.3.4",
+    "karma": "^0.13.8",
+    "karma-chrome-launcher": "^0.2.0",
+    "karma-jasmine": "^0.3.6",
+    "karma-requirejs": "^0.2.2",
+    "requirejs": "^2.1.18"
+  },
+  "preferGlobal": true,
+  "private": false,
+  "license": "MIT"
 }

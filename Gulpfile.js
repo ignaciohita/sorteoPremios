@@ -3,7 +3,8 @@ var gulp = require("gulp"),
     webserver = require("gulp-webserver"),
     jsHint = require("gulp-jshint"),
     jsLint = require("gulp-jslint"),
-    gjsLint = require("gulp-gjslint");
+    gjsLint = require("gulp-gjslint"),
+    KarmaServer = require("karma").Server;
 
 // Servidor web de desarrollo
 gulp.task("dev-server", function () {
@@ -45,6 +46,18 @@ gulp.task("jsGoogleLint", function () {
         .pipe(gjsLint.reporter("console"), {
             fail: true
         });
+});
+
+// Pruebas unitarias con Karma
+gulp.task("karmaTest", function (done) {
+    "use strict";
+
+    var karmaServer = new KarmaServer({
+        configFile: __dirname + "/karma.config.js",
+        singleRun: true
+    }, done);
+
+    karmaServer.start();
 });
 
 gulp.task("default", ["dev-server"]);

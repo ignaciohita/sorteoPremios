@@ -21,6 +21,6 @@ angularApp.controller('PremioController', function ($scope) {
     'use strict';
 
     return function (fechaSorteo) {
-        return fechaSorteo.getDay() + ' del ' + fechaSorteo.getUTCMonth() + ' de ' + fechaSorteo.getFullYear();
+        return fechaSorteo.getDate() + ' del ' + (fechaSorteo.getUTCMonth() + 1) + ' de ' + fechaSorteo.getFullYear();
     };
 });
