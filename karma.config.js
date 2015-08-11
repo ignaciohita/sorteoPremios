@@ -8,7 +8,7 @@ module.exports = function (config) {
 
         // frameworks a usar
         // frameworks disponibles: https://npmjs.org/browse/keyword/karma-adapter
-        frameworks: ['jasmine', 'requirejs'],
+        frameworks: ['requirejs', 'jasmine'],
 
         // list of files / patterns to load in the browser
         files: ['app/lib/angular/angular.js',

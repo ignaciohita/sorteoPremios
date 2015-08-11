@@ -10,8 +10,13 @@ angularApp.controller('PremioController', function ($scope) {
                       'apartamento en la playa'];
 
     $scope.elegirPremios = function () {
-        var primerPremio = Math.floor(Math.random() * $scope.listaPremios.length),
+        var primerPremio,
+            ultimoPremio;
+
+        do {
+            primerPremio = Math.floor(Math.random() * $scope.listaPremios.length);
             ultimoPremio = Math.floor(Math.random() * $scope.listaPremios.length);
+        } while (primerPremio === ultimoPremio);
 
         $scope.premios = $scope.listaPremios.slice(Math.min(primerPremio, ultimoPremio), Math.max(primerPremio, ultimoPremio));
 
